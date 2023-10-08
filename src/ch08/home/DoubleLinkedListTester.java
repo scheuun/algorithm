@@ -34,8 +34,7 @@ class DoubleLinkedListTester {
 		}
 
 		//--- 회원번호로 순서를 정하는 컴퍼레이터  ---//
-		public static final Comparator<Data> NO_ORDER =
-																					new NoOrderComparator();
+		public static final Comparator<Data> NO_ORDER = new NoOrderComparator();
 
 		private static class NoOrderComparator implements Comparator<Data> {
 			public int compare(Data d1, Data d2) {
@@ -44,8 +43,7 @@ class DoubleLinkedListTester {
 		}
 
 		//--- 이름으로 순서를 정하는 컴퍼레이터  ---//
-		public static final Comparator<Data> NAME_ORDER =
-																					new NameOrderComparator();
+		public static final Comparator<Data> NAME_ORDER = new NameOrderComparator();
 
 		private static class NameOrderComparator implements Comparator<Data> {
 			public int compare(Data d1, Data d2) {
@@ -69,9 +67,9 @@ class DoubleLinkedListTester {
 		PREV(       "선택 노드를 앞쪽으로"),
 		PRINT_CRNT( "선택 노드를 출력"),
 		DUMP(       "모든 노드를 출력"),
-		PURGE_NO(   "동일 번호의 노드를 삭제"),		//【연습8-9】
-		PURGE_NAME( "동일 이름의 노드를 삭제"),		//【연습8-9】
-		RETRIEVE(   "특정 노드를 출력"),				//【연습8-10】
+		PURGE_NO(   "동일 번호의 노드를 삭제"),
+		PURGE_NAME( "동일 이름의 노드를 삭제"),
+		RETRIEVE(   "특정 노드를 출력"),
 		TERMINATE(  "종료");
 
 		private final String message;		// 출력용 문자열
